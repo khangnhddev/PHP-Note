@@ -1,3 +1,3 @@
 # PHP-Example
-## Closure
-## Generator
+### Closure
+### Generator
