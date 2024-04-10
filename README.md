@@ -95,3 +95,36 @@ If yourbank.com/transfer-fund implements the CSRF correctly, it generates a one-
 
 ### Flash Messages
 A flash message allows you to create a message on one page and display it once on another page. To transfer a message from one page to another, you use the $_SESSION superglobal variable.
+
+### Exception
+
+### Static methods and properties
+Suppose that you want to create an App class for your web application. And the App class should have one and only one instance during the lifecycle of the application. In other words, the App should be a singleton.
+The following illustrates how to define the App class by using the static methods and properties:
+
+```php
+<?php
+
+class App
+{
+	private static $app = null;
+
+	private function __construct()
+	{
+	}
+
+	public static function get() : App
+	{
+		if (!self::$app) {
+			self::$app = new App();
+		}
+
+		return self::$app;
+	}
+
+	public function bootstrap(): void
+	{
+		echo 'App is bootstrapping...';
+	}
+}
+```
