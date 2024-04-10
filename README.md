@@ -92,3 +92,6 @@ Because you’re currently logged in to the yourbank.com, the request silently t
 If yourbank.com/transfer-fund implements the CSRF correctly, it generates a one-time token and inserts the token into the fund transfer form like this
 
 ### Sanitize Input
+
+### Flash Messages
+A flash message allows you to create a message on one page and display it once on another page. To transfer a message from one page to another, you use the $_SESSION superglobal variable.
