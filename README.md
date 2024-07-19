@@ -128,3 +128,16 @@ class App
 	}
 }
 ```
+
+### What is the use of the isset() function in PHP?
+The isset() function in PHP is used to determine if a variable is set and is not NULL. It returns TRUE if the variable exists and has a value other than NULL, otherwise it returns FALSE.
+
+```php
+$var = "Hello, World!";
+if (isset($var)) {
+    echo "Variable is set.";
+} else {
+    echo "Variable is not set.";
+}
+```
+
