@@ -1,5 +1,5 @@
 
-# Full PHP Notes (25 Topics)
+# PHP Notes
 
 ## Topics Covered:
 1. Closure
@@ -516,7 +516,3 @@ foreach ($methods as $method) {
     echo $method->getName();
 }
 ```
-
----
-
-This completes the PHP notes with all 25 topics in detail.
